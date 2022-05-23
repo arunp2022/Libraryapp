@@ -2,12 +2,12 @@
 const express = require('express'); 
 const path = require ('path'); 
 const bodyParser = require('body-parser'); //Part#1 Point2
-const cors = require('cors');
+const cors = require('cors');//Part#2 Point7
 const PORT = process.env.PORT || 5000
 const dotenv = require('dotenv')
 dotenv.config({path:__dirname+'/.env'});
 
-const nav = require('./src/data/nav'); //Part#2 Point6
+ //Part#2 Point6 navbar deleted
 
 const loginRouter = require('./src/routes/loginroute');
 const signupRouter = require('./src/routes/signuproute');

@@ -79,7 +79,7 @@ authorsRouter.post('/delete', function (req, res) { // Part#2 Point9
 
 
 //router to edit author
-authorsRouter.post('/edit', function (req, res) {
+authorsRouter.post('/edit', function (req, res) {// Part#2 Point9
 
     authordata.findById(req.body.id, function(err, data){
         if (err) {
